@@ -1,0 +1,17 @@
+defaultEntryPoints:
+  - http
+
+# enable dashboard
+api:
+  dashboard: true
+  insecure: true
+
+# create entrypoint
+entryPoints:
+  http:
+    address: ":9090"
+
+# user file provider
+providers:
+  file:
+    filename: traefik-dynamic.toml
